@@ -13,20 +13,16 @@ public class Cuenta {
 	}
 
 	public void reintegro(float f) {
-		// TODO Auto-generated method stub
-		
+		if(this.saldo>-500f)
+			this.saldo -= f;		
 	}
 
 	public void ingreso(float f) {
-		
+		this.saldo += f;	
 	}
 
-	public Float getSaldoC1() {
-		return -250f;
-	}
-
-	public Float getSaldoC2() {
-		return -450f;
+	public Float getSaldo() {
+		return this.saldo;
 	}
 
 	

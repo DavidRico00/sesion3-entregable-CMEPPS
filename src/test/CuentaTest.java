@@ -43,8 +43,8 @@ class CuentaTest {
 		cuenta2.ingreso(50f);
 		cuenta2.reintegro(100f);
 		
-		assertEquals(-250f, cuenta1.getSaldoC1());
-		assertEquals(-450f, cuenta2.getSaldoC2());
+		assertEquals(-250f, cuenta1.getSaldo());
+		assertEquals(-500f, cuenta2.getSaldo());
 		
 	}
 
