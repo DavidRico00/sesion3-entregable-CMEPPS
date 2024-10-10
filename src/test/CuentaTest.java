@@ -8,6 +8,8 @@ import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+import pkg.Cuenta;
+
 class CuentaTest {
 	
 	private Cuenta cuenta1, cuenta2;
@@ -41,8 +43,8 @@ class CuentaTest {
 		cuenta2.ingreso(50f);
 		cuenta2.reintegro(100f);
 		
-		assertEquals(-250f, cuenta1.getSaldo1());
-		assertEquals(-450f, cuenta2.getSaldo2());
+		assertEquals(-250f, cuenta1.getSaldoC1());
+		assertEquals(-450f, cuenta2.getSaldoC2());
 		
 	}
 
